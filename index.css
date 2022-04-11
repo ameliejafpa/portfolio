@@ -1,0 +1,74 @@
+body li{list-style-type: none;}
+h2{width: 100%;}
+p{text-align: justify; overflow: auto; padding-right: 10px;}
+
+
+/* header */
+header{width: 75vw; height: 204px; position: sticky; top: 0px; background-color: #d1e5e4;}
+
+/* sidebar */
+aside{width: 22.5vw; background-color: #d1e5e4;
+    position: absolute; right: 4px; top: 20.5px;}
+aside .image img{width: 22.5vw;}
+.infoPerso ul{height: auto; margin: 3px -5px;}
+
+
+/* Container */
+.container{width: 75vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.presentation, .competences, .projets, .formation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #d1e5e4;
+    justify-content: space-around;
+    padding: 5px;
+    padding-right: 10px;
+    margin: 10px 0px;
+}
+.competences img{width: 20vw;}
+
+.detailProjet{background-color: #d8b9ff; width: 30%;padding: 5px 10px;}
+
+.formation ul {width: 45%;}
+
+/* travail */
+.travail{background-color: #d1e5e4;}
+    #friseChrono{display: grid;
+    grid-template-columns: repeat(7, 14%);
+    grid-template-rows: repeat(2, 180px);}
+    #friseChrono p{overflow: auto;text-align: center;}
+    .job1{grid-column: 1;grid-row: 1;}
+    .job2{grid-column: 2;grid-row: 2;}
+    .job3{grid-column: 3;grid-row: 1;}
+    .job4{grid-column: 4;grid-row: 2;}
+    .job5{grid-column: 5;grid-row: 1;}
+    .job6{grid-column: 6;grid-row: 2;}
+    .job7{grid-column: 7;grid-row: 1;}
+    #friseChrono :nth-child(odd){border-bottom: solid 5px rgba(132, 140, 245, 0.979); margin-bottom: 0px;}
+    #friseChrono :nth-child(even){border-top: solid 5px rgb(208, 128, 240); margin-top: -5px;}
+        #friseChrono p{padding: 0px;}
+
+/* ancre */
+.ancre a{position: fixed; bottom: 0; right: 0;
+}
+.ancre img{
+    width: 50px;
+ }
+
+/* responsive design */
+@media screen and (max-device-width: 1023px){
+    header, aside, .container, .presentation, .competences, .projets, .formation, .formation ul{
+        position: static; width: 98%; height: auto; padding: 2px; margin: 5px; }
+
+    .detailProjet{background-color: #d8b9ff; width: 90%;margin: 5px}
+    p{text-align: justify; overflow: auto; margin-right: 5px;}
+
+    .logiciels, .langages, .competences img, .qualites{width: 90%; display: block; }
+
+}
+   
